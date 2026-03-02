@@ -4,7 +4,7 @@ import { createProxyMiddleware } from "http-proxy-middleware";
 const app = express();
 
 app.use("/", createProxyMiddleware({
-  target: "http://olivia.hidencloud.com:24711/",
+  target: "http://olivia.hidencloud.com:24711",
   changeOrigin: true,
   ws: true,
   onProxyRes: function (proxyRes, req, res) {
