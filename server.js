@@ -5,7 +5,7 @@ const app = express();
 
 
 app.use("/", createProxyMiddleware({
-  target: "http://ip:puerto",
+  target: "https://olivia.hidencloud.com:24711",
   changeOrigin: true,
   ws: true 
 }));
